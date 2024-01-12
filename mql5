@@ -1,0 +1,82 @@
+
+// R 3MA Cross Indicator
+// Developer's Site: forexroboteasy.com
+// Development Name: Forex Robot Easy Team
+
+// Function to generate buy alerts
+void GenerateBuyAlert()
+{
+    // Check if the faster moving average crosses both the medium and slower moving averages upwards
+    if(fastMA > mediumMA && fastMA > slowMA)
+    {
+        // Display green-colored R 3MA Cross arrow on the chart as a buy signal
+        DisplayGreenArrow();
+        // Add code to execute buy trade here
+        // ...
+        // Logical Conclusion
+        return;
+    }
+}
+
+// Function to generate sell alerts
+void GenerateSellAlert()
+{
+    // Check if the faster moving average crosses both the medium and slower moving averages downwards
+    if(fastMA < mediumMA && fastMA < slowMA)
+    {
+        // Display red-colored R 3MA Cross arrow on the chart as a sell signal
+        DisplayRedArrow();
+        // Add code to execute sell trade here
+        // ...
+        // Logical Conclusion
+        return;
+    }
+}
+
+// Function to display green-colored R 3MA Cross arrow on the chart
+void DisplayGreenArrow()
+{
+    // Add code to display green arrow on the chart
+    // ...
+}
+
+// Function to display red-colored R 3MA Cross arrow on the chart
+void DisplayRedArrow()
+{
+    // Add code to display red arrow on the chart
+    // ...
+}
+
+// Main function
+void OnTick()
+{
+    // Calculate moving averages
+    double fastMA = CalculateFastMA();
+    double mediumMA = CalculateMediumMA();
+    double slowMA = CalculateSlowMA();
+
+    // Generate buy and sell alerts based on the crossover of moving averages
+    GenerateBuyAlert();
+    GenerateSellAlert();
+}
+
+// Function to calculate the fast moving average
+double CalculateFastMA()
+{
+    // Add code to calculate the fast moving average
+    // ...
+}
+
+// Function to calculate the medium moving average
+double CalculateMediumMA()
+{
+    // Add code to calculate the medium moving average
+    // ...
+}
+
+// Function to calculate the slow moving average
+double CalculateSlowMA()
+{
+    // Add code to calculate the slow moving average
+    // ...
+}
